@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Form</title>
+</head>
+<body>
+<form  method="post">
+        first_text:<br>
+        <input type="text" name="first_text">
+        <br>
+        second_text:<br>
+        <input type="text" name="second_text">
+        <br><br>
+  
+        <button type="submit" formaction="#">
+            Submit 1
+        </button>
+          
+        <button type="submit" formaction="#">
+            Submit 2
+        </button>
+</form>
+
+<a href="http://127.0.0.1:8000/similar-texts-recognition">
+    <button>Get similarity</button>
+
+<p>Click <a href="http://127.0.0.1:8000">here to go to the enter page</a>.</p>
+<p>Result: {{ result }}</p>
+
+</body>
+</html>
