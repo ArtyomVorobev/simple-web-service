@@ -10,20 +10,20 @@ HTML разметка добавлена для первых двух задач
 Чтобы запустить веб-сервис, нужно, находясь в папке с проектом, в консоли написать следующую команду: uvicorn main:app --reload
 
 Далее перейти по ссылке http://127.0.0.1:8000. Там выбираем нужную нам задачу.
-![Image alt](https://github.com/ArtyomVorobev/images/blob/main/1.PNG)
+![1](https://user-images.githubusercontent.com/66844229/145725994-8ceabf9d-8b54-47e4-9f5c-220157b70386.PNG)
 
 Чтобы протестировать третью задачу переходим по ссылке http://127.0.0.1:8000/docs, там выбираем similar-text-recognition
-![Image alt](https://github.com/ArtyomVorobev/images/blob/main/2.PNG)
+![2](https://user-images.githubusercontent.com/66844229/145725997-1f45bc24-4caa-4a0e-98dc-a32685f65fa1.PNG)
 
 Далее нажимаем кнопку try it out
-![Image alt](https://github.com/ArtyomVorobev/images/blob/main/3.PNG)
+![3](https://user-images.githubusercontent.com/66844229/145726009-da78e244-6e17-43bb-a074-2fb24c482165.PNG)
 
 Вводим нужные тексты в формы для ввода и нажимаем EXECUTE 
-![Image alt](https://github.com/ArtyomVorobev/images/blob/main/4.PNG)
+![4](https://user-images.githubusercontent.com/66844229/145726012-6d6f1528-3129-4da0-9574-dd50bf43fd52.PNG)
+
 
 Получаем значение косинусного расстояния в Response body 
-![Image alt](https://github.com/ArtyomVorobev/images/blob/main/5.PNG)
-
+![5](https://user-images.githubusercontent.com/66844229/145726017-abea84a8-9a98-433d-bcf0-ccf3e480eb9f.PNG)
 
 
 # Про модели
@@ -37,7 +37,8 @@ HTML разметка добавлена для первых двух задач
 
 3. Для третьей предобученную модель bert-base-nli-mean-tokens, а в качестве меры схожести текстов выбрал косинусное расстояние, которое считал по формуле 
 
-![Image alt](https://github.com/ArtyomVorobev/images/blob/main/cosine.svg)
+![cosine](https://user-images.githubusercontent.com/66844229/145726046-d5c145a7-1ed5-41be-b939-a66771669d59.png)
+
 
 Модель Принимает на вход текст, а на выходе отдает эмбеддинг нашего текста размерности 768*1. Далее считается косинусное расстояние между данными векторами  обоих текстов. В Response body получаем значение косинусного расстояния.
 
